@@ -27,17 +27,17 @@ class CardGame:
    
 
   dif highest_card(self, card1 card2): # 1. Def has been misspelled as "dif", 2. class of which card1 and card2 are objects needs to be imported, 3. missing comma between "card1" and "card2"
-  if card1.value > card2.value:
+  if card1.value > card2.value: # Body of the function should be indented
     return card # "card" has not been defined, should be "card1"
   else:
     return card2
   
 
 
-def cards_total(self, cards):
+def cards_total(self, cards): # Entire method needs to be indented
   total # "total" needs to be assigned to 0
   for card in cards:
     total += card.value # The class of which object "card" is an instance needs to be imported
-    return "You have a total of" + total # Cannot concatenate strings and integers - string formatting needed or "total" needs to be converted to a string plus a space added after "of"
+    return "You have a total of" + total # 1. Cannot concatenate strings and integers - string formatting needed or "total" needs to be converted to a string plus a space added after "of", 2. This line should be at the same level of indentation as the for loop statement.
   
 ```
