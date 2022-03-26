@@ -14,28 +14,30 @@ Only comment on errors that would stop the tests running.
 
 ```python
 
-class CardGame:
+# the class of which "card", "card1" and "card2" are objects needs to be imported
 
+class CardGame:
+  # The class needs to be initiated here with def __init__(self) ???????
 
   def check_for_ace(self, card):
-    if card.value = 1:
+    if card.value = 1: # 1. The class of which object "card" is an instance needs to be imported, 2. "==" needed to check equality in conditional statement
       return True
-    else
+    else # Missing colon
       return False
    
 
-  dif highest_card(self, card1 card2):
+  dif highest_card(self, card1 card2): # 1. Def has been misspelled as "dif", 2. class of which card1 and card2 are objects needs to be imported, 3. missing comma between "card1" and "card2"
   if card1.value > card2.value:
-    return card
+    return card # "card" has not been defined, should be "card1"
   else:
     return card2
   
 
 
 def cards_total(self, cards):
-  total
+  total # "total" needs to be assigned to 0
   for card in cards:
-    total += card.value
-    return "You have a total of" + total
+    total += card.value # The class of which object "card" is an instance needs to be imported
+    return "You have a total of" + total # Cannot concatenate strings and integers - string formatting needed or "total" needs to be converted to a string plus a space added after "of"
   
 ```
