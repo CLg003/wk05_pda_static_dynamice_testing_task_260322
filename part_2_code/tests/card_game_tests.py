@@ -6,7 +6,7 @@ class TestCardGame(unittest.TestCase):
 
     def setUp(self):
         self.card_1 = Card("Hearts", 9)
-        self.card_2 = Card("DIamonds", 10)
+        self.card_2 = Card("Diamonds", 10)
         self.card_3 = Card("Spades", 1)
         self.cards = [self.card_1, self.card_2, self.card_3]
         self.card_game = CardGame()
